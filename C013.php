@@ -9,7 +9,7 @@
     for($i=0;$i<$sou;$i++){
         $shou=$heya[$i];
         $kirai=0;
-        while($shou>10){
+        while($shou>=10){
                 $amari=$shou%10;
                 $shou=floor($shou/10);
                 if($amari==$bad){$kirai=1;break;}
