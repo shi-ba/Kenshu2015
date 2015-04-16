@@ -1,4 +1,6 @@
 <?php
+    //C013問題 全パス
+    //柴田和樹、中野大輝
     $bad = fgets(STDIN);//kirai
     $sou = fgets(STDIN);//sousu
     $heya=array();
