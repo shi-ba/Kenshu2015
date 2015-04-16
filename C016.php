@@ -1,4 +1,6 @@
 <?php
+	//C016問題 全パス
+	//柴田和樹、中野大輝
     $input_lines = fgets(STDIN);
     $alph=str_split($input_lines);
     for($i=0;$i<strlen($input_lines);$i++){

@@ -1,4 +1,6 @@
 <?php
+	//C019問題 全パス
+	//柴田和樹、中野大輝
     $sou = fgets(STDIN);
 
     for($i=0;$i<$sou;$i++){

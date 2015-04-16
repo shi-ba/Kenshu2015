@@ -1,4 +1,6 @@
 <?php
+	//C015問題 全パス
+	//柴田和樹、中野大輝
     $maisu = fgets(STDIN);
     $point=0;
     for($i=0;$i<$maisu;$i++){

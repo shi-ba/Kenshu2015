@@ -1,4 +1,6 @@
 <?php
+	//C017問題 全パス
+	//柴田和樹、中野大輝
     $oya = fgets(STDIN);
     $sou = fgets(STDIN);
 

@@ -1,4 +1,6 @@
 <?php
+	//C010問題 全パス
+	//柴田和樹、中野大輝
     $genba=explode(" ",fgets(STDIN));
     $sou = fgets(STDIN);
     for($i=0;$i<$sou;$i++){
