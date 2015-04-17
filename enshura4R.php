@@ -1,7 +1,5 @@
 <?php
-        $n = fgets(STDIN);
-        $hani=explode(" ",$n);
-        $yoko=$hani[0];
+        $hani = explode(" ",str_replace(" \r\n","",fgets(STDIN)));
         $tate=$hani[1];
         $area=$hani[2];
         /*for($i=0;$i<$tate;$i++){
@@ -10,11 +8,6 @@
         for($i=0;$i<$tate;$i++){
                 $masu[$i]=explode(" ",str_replace(" \r\n","",fgets(STDIN)));
         }
-        //for($i=0;$i<$area;$i++){
-        //      $an = explode(" ",fgets(STDIN));
-        //}
-        //echo $masu[$an[0]-1][$an[1]-1];
-        //echo $masu[$an[2]-1][$an[3]-1];
         $sum = 0;
         for($k=0;$k<$area;$k++){
                 $an=explode(" ",str_replace(" \r\n","",fgets(STDIN)));
