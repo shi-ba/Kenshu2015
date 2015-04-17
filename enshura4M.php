@@ -1,4 +1,7 @@
 <?php
+    //ミナミルート(爆弾落とし)
+    //テストケース全パス
+    //柴田和樹、中野大輝
         $hani = explode(" ",str_replace(" \r\n","",fgets(STDIN)));
         $yoko = $hani[0];
         $tate = $hani[1];
