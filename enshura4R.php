@@ -1,23 +1,19 @@
 <?php
-    //ƒŒƒiƒ‹[ƒg(•\ŒvŽZ)
-    //’ñoŠm”FƒpƒXA—pˆÓÏ‚Ý“ü—Í—áƒpƒX
-    //‰¬ŒEŒNƒIƒŠƒWƒiƒ‹ƒeƒXƒgƒf[ƒ^ƒpƒX
-    //ÅIƒeƒXƒgƒP[ƒX‚Ì‚Ý~AŒ»ÝƒfƒoƒbƒO’†
-    //ŽÄ“c˜aŽ÷A’†–ì‘å‹P
+    //ãƒ¬ãƒŠãƒ«ãƒ¼ãƒˆ(è¡¨è¨ˆç®—)
+    //æœ€çµ‚ãƒ†ã‚¹ãƒˆã‚±ãƒ¼ã‚¹å…¨ãƒ‘ã‚¹
+    //æŸ´ç”°å’Œæ¨¹ã€ä¸­é‡Žå¤§è¼
         $hani = explode(" ",str_replace(" \r\n","",fgets(STDIN)));
         $tate=$hani[1];
         $area=$hani[2];
-        /*for($i=0;$i<$tate;$i++){
-                $masu[$i]=array();
-        }*/
+
         for($i=0;$i<$tate;$i++){
                 $masu[$i]=explode(" ",str_replace(" \r\n","",fgets(STDIN)));
         }
         $sum = 0;
         for($k=0;$k<$area;$k++){
                 $an=explode(" ",str_replace(" \r\n","",fgets(STDIN)));
-                for($i=$an[0];$i<=$an[2];$i++){
-                        for($j=$an[1];$j<=$an[3];$j++){
+                for($i=$an[0];$i<$an[2]+1;$i++){//ã“ã®ãƒ«ãƒ¼ãƒ—æ¡ä»¶å¤‰æ›´ã«ã‚ˆã‚ŠæˆåŠŸ
+                        for($j=$an[1];$j<$an[3]+1;$j++){
                                 $sum += $masu[$j-1][$i-1];
                                 $masu[$j-1][$i-1] = 0;
                         }
